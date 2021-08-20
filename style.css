@@ -117,7 +117,7 @@ body {
 .cancel-order {
     font-size: 12px;
     color: hsl(224, 23%, 55%);
-    font-weight: 900;
+    font-weight: 700;
     cursor: pointer;
 }
 
