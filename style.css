@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    background: url("./images/pattern-background-desktop.svg") no-repeat,
+    hsl(225, 100%, 94%);
+    background-size: cover;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 600px;
+    background-color: white;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.card-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title {
+    font-size: 26px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.card-info {
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    padding: 5px 10%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.card-plan {
+    background-color: hsl(225, 100%, 98%);
+    padding: 15px 25px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card-plan div {
+    text-align: left;
+    width: 50%;
+}
+
+.card-plan .annual-plan {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.card-plan .price-plan {
+    color: hsl(224, 23%, 55%);
+}
+
+.card-plan .change-plan {
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.card-plan .change-plan:hover {
+    color: hsl(250, 100%, 75%);
+    text-decoration: none;
+}
+
+.proceed-payment {
+    width: 75%;
+    background-color: hsl(245, 75%, 52%);
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 25px 15px -5px rgba(56, 41, 224, 0.15);
+    cursor: pointer;
+}
+
+.proceed-payment:hover {
+    background-color: hsl(250, 100%, 75%);
+}
+
+.cancel-order {
+    font-size: 12px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.cancel-order:hover {
+    color: hsl(223, 47%, 23%);
+}
